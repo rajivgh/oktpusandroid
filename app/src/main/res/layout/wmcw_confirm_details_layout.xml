@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/close"
+                    android:id="@+id/iv_wmcw_confirm_close"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wmcw_confirm_title"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_weight="0.3"
+                    android:paddingLeft="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_wmcw_confirm_details_field_name"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:textSize="15sp"
+                    android:paddingLeft="2dp"
+                    android:id="@+id/tv_wmcw_confirm_details"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_state_change"
+                android:padding="@dimen/button_padding"
+
+                android:id="@+id/layout_wmcw_confirm_btn">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/buttonText"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/wmcw_confirm_buy_btn"
+                    android:clickable="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_state_change"
+        android:padding="@dimen/button_padding"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_wmcw_confirm_btn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/buttonText"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/wmcw_confirm_buy_btn"
+            android:clickable="false"/>
+    </RelativeLayout>-->
+
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wmcw_confirm_make"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wmcw_confirm_model"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wmcw_confirm_transmission"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wmcw_confirm_year"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wmcw_confirm_kms"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wmcw_confirm_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wmcw_confirm_email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/"/>
+    </RelativeLayout>-->
+</RelativeLayout>

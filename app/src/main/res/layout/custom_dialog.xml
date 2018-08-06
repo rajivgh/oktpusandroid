@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@color/white"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="40dp"
+            android:maxWidth="40dp"
+            android:clickable="true"
+            android:src="@drawable/close" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_dialogcontent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_state_change"
+            android:textColor="@color/colorPrimary"
+            android:text="Cancel" />
+
+        <Button android:id="@+id/btnok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_state_change"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Ok"/>
+
+    </LinearLayout>
+
+</LinearLayout>

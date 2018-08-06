@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryBgNew"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ss_dialog_title"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/close"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_ss_dialog_title"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/close"
+            android:background="@color/white"
+            android:id="@+id/btn_close"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ss_dialog_title_content"
+        android:padding="5dp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingTop="5dp"
+            android:background="@color/primaryBgNew">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="8.5"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ss_dialog_title"
+                    android:textAllCaps="true"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true" />
+                <!--<ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/close"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_edit"
+                    android:layout_toRightOf="@id/tv_ss_dialog_title"/>-->
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/close"
+                android:id="@+id/btn_close"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ss_dialog_title_content"
+            android:textColor="@color/groupHeaderSelectedText"
+            android:paddingTop="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/app_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/rl">
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            >
+
+            <TextView
+                android:id="@+id/receive_notif_label"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/receive_notif_label"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:padding="10dip"
+                android:layout_weight="7"/>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_width="0dp">
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/receive_notif_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    app:kswThumbColor="@color/colorAccent"
+                    app:kswBackColor="@color/colorPrimary"
+                    android:padding="10dip"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/groupHeaderSelected"
+            />
+        <TableRow
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/launch_search_label"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/launch_search_label"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:padding="10dip"
+                android:layout_weight="7" />
+
+            <TextView
+                android:id="@+id/launch_link"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/launch"
+                android:textColor="@color/colorPrimary"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:padding="10dip"
+                android:layout_weight="3" />
+
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/groupHeaderSelected"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TableRow
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            >
+
+            <TextView
+                android:id="@+id/delete_search_label"
+                android:layout_width="0dip"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_search_label"
+                android:textColor="@color/colorPrimary"
+                android:padding="10dip"
+                android:layout_weight="7" />
+
+            <TextView
+                android:id="@+id/delete_link"
+                android:layout_width="0dip"
+                android:text="@string/delete"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:padding="10dip"
+                android:textColor="@color/colorTextButtonRed"
+                android:layout_weight="3" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

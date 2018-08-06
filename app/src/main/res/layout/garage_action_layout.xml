@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:divider="?android:attr/dividerHorizontal"
+    android:showDividers="beginning">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fav_active"
+                android:id="@+id/iv_fav"
+                android:paddingRight="10dp"
+                android:layout_gravity="left|center_vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_forward"
+                android:id="@+id/iv_share"
+                android:paddingRight="20dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="left|center_vertical"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="20dp"
+                android:text="@string/overflow_menu"
+                android:id="@+id/overflow_menu"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_alignParentRight="true"
+                android:textAlignment="gravity"
+                android:layout_gravity="right"
+                android:gravity="center_vertical|right" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

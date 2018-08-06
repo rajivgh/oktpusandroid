@@ -1,0 +1,6 @@
+<resources>
+    <string name="facebook_app_id">631307700372844</string>
+    <string name="paypal_client_id">AQnQTCwskbXrVBt5kJK9IwOlqwkpH-6Rrj8A7-f_dmAqazUT6zs_j9PToNXsoPmbCTthv02dC4tuzGCL</string>
+    <string name="paypal_config_env">sandbox</string>
+    <string name="gplus_client_id">207108401560-ilc7f6s54ddkfvmj5fdn7kk43npooen4.apps.googleusercontent.com</string>
+</resources>

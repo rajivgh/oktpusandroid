@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "1094579423391",
+    "project_id": "oktpus-74fe8"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094579423391:android:f7d9622750cdaadb",
+        "android_client_info": {
+          "package_name": "com.app.oktpus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094579423391-tniia5u3hvpduusse98ocln0ancim704.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.oktpus",
+            "certificate_hash": "8998d8a4f52594e973a7c94437e15f58999b69ca"
+          }
+        },
+        {
+          "client_id": "1094579423391-0iku32iqfo4q4j05hqv0325m96qka4ba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtYvsH71mg8BB_6WbZ9Io8vT3TP6vToc0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-105008199-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

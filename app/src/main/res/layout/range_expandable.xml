@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <com.app.oktpus.utils.ExpandableLayout
+        app:expWithParentScroll="true"
+        app:expDuration="300"
+        app:expExpandScrollTogether="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandable_layout"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="end">
+
+        <!--Visible layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:id="@+id/ll_header">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/child_header"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_group_header_price_model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:textColor="@color/buttonText"
+                            android:textAllCaps="true"
+                            android:textSize="16sp"/>
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_help"
+                            android:id="@+id/iv_help"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="invisible"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="5dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:textSize="16sp"
+                        android:id="@+id/tv_selected_val"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/grp_indicator"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_down"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center_vertical"/>
+        </LinearLayout>
+
+
+        <!--Invisible layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:clickable="false"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/tv_min_price_model"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_border_left"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:imeActionLabel="Set"
+                    android:imeOptions="actionDone"
+                    android:gravity="end"
+                    android:maxLength="18"
+                    android:textAlignment="center"
+                    android:layout_weight="0.5"/>
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/tv_max_price_model"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:inputType="number"
+                    android:imeActionLabel="Set"
+                    android:imeOptions="actionDone"
+                    android:maxLength="18"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textAlignment="center"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_corner_border_right"/>
+            </LinearLayout>
+
+            <io.apptik.widget.MultiSlider
+                android:id="@+id/range_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:thumbNumber="2"
+                rsb:rangeColor="@color/primaryBtn"
+                android:thumb="@drawable/range_thumb1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/multi_unit_layout"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.app.oktpus.utils.ExpandableLayout>
+</android.support.v7.widget.CardView>

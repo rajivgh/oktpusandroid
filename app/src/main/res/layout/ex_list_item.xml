@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_search_view">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text=""
+                    android:textSize="@dimen/text_med"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tv_filter_popup_title" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/close"
+                    android:layout_marginRight="11dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_popup_close"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sv_attrib_filter"
+                android:background="@color/white"
+                android:focusableInTouchMode="true"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <com.app.oktpus.utils.CustomRecyclerView
+        android:id="@+id/attribute_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:nestedScrollingEnabled="false"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:scrollbars="vertical"
+
+        android:layout_above="@+id/btn_layout"
+        android:layout_below="@+id/card_search_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_layout"
+        >
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:clickable="false"
+            android:textColor="@color/buttonText"
+            android:textSize="@dimen/text_16sp"
+            android:background="@drawable/btn_stateful_no_corners"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_search_view">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text=""
+                        android:textSize="@dimen/text_big"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/tv_filter_popup_title" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/close"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/btn_popup_close"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sv_attrib_filter"
+            android:background="@color/white"
+            android:layout_below="@+id/card_search_view"
+            android:focusableInTouchMode="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/divider"
+            android:layout_below="@+id/sv_attrib_filter"
+            android:background="@color/groupHeaderSelected"/>
+
+        <com.app.oktpus.Utils.CustomRecyclerView
+            android:id="@+id/attribute_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:nestedScrollingEnabled="false"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:scrollbars="vertical"
+
+            android:layout_above="@+id/btn_layout"
+            android:layout_below="@+id/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_layout"
+            >
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ok"
+                android:clickable="false"
+                android:textColor="@color/buttonText"
+                android:background="@drawable/btn_stateful_no_corners"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    -->
+

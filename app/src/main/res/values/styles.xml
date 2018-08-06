@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/theme_bg</item>
+        <item name="colorPrimaryDark">#343439</item>   <!--#232f3b  202831-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorSwitchThumbNormal">@color/switchBackgroundColor</item>
+        <item name="textColorError">@color/design_textinput_error_color_light</item>
+        <!--<item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>-->
+    </style>
+
+    <!--<style name="AppTheme.ActionBar.Transparent" parent="AppTheme">
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>-->
+
+    <style name="AppTheme.ActionBar" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Transparent" parent="AppTheme">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/splash_theme</item>
+    </style>
+
+    <style name="Base.Widget.AppCompat.SearchView" parent="android:Widget.Material.Light.SearchView" tools:targetApi="lollipop">
+        <item name="searchIcon">@null</item>
+        <item name="defaultQueryHint">@string/search_query_hint</item>
+        <item name="closeIcon">@drawable/ic_search_close</item>
+        <item name="queryBackground">@null</item>
+        <item name="submitBackground">@null</item>
+    </style>
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:textColor">@color/buttonColor</item>
+        <item name="colorAccent">@color/buttonColor</item>
+        <item name="colorControlNormal">@color/buttonColor</item>
+        <item name="colorControlActivated">@color/buttonColor</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/switchActiveColor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="TextLabel_bck_gray" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorAccent">@color/switchActiveColor</item>
+        <item name="colorControlNormal">@color/buttonColor</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">70dp</item>
+        <item name="android:maxWidth">80dp</item>
+        <item name="android:width">100dp</item>
+        <item name="android:height">100dp</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <!--<item name="android:windowExitAnimation">@anim/slide_out</item>-->
+        <item name="android:taskToBackEnterAnimation">@anim/slide_in_back</item>
+        <!--<item name="android:taskToBackExitAnimation">@anim/slide_out_back</item>-->
+        <!--<item name="android:windowReenterTransition">@anim/slide_out_back</item>
+        <item name="android:windowReturnTransition">@anim/slide_in_back</item>-->
+        <!--<item name="android:popupAnimationStyle">@style/DialogAnimationReverse</item>-->
+    </style>
+
+    <style name="DialogAnimationReverse">
+        <item name="android:windowEnterAnimation">@anim/slide_in_back</item>
+        <!--<item name="android:windowExitAnimation">@anim/slide_out_back</item>-->
+    </style>
+
+    <style name="PageContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+</resources>

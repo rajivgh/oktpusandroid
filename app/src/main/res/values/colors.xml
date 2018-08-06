@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3c3c44</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="windowBackground">#000000</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#9e9e9e</color>
+    <color name="white">#FFFFFF</color>
+    <color name="buttonColor">#3c3c44</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="icons_">#20262E</color>
+    <!--<color name="album_title">#4c4c4c</color>-->
+    <color name="card_title">#4c4c4c</color>
+    <color name="layoutBgPrimary">#fafafa</color>
+    <color name="drawerBg">#f0f0f0</color>
+
+    <color name="groupHeaderSelected">#cecece</color>
+    <color name="groupHeaderSelectedText">#777777</color>
+    <color name="primaryBackground">#fafafa</color>
+    <color name="primaryBgNew">#f0f0f0</color>
+    <color name="colorTextButtonRed">#cb2026</color>
+    <color name="listChildDivider">#f0f0f0</color>
+    <color name="listGroupDivider">#dedede</color>
+    <color name="switchActiveColor">#46b84f</color>
+    <color name="switchBackgroundColor">#3c3c44</color>
+    <color name="exlistGroupHeaderSelected">#dedede</color>
+    <color name="multiUnitTexts">#ffa500</color>
+
+    <color name="headingBlue">#1D75C1</color>
+    <color name="headingGreen">#206440</color>
+
+    <color name="errorTextMsg">#cb2026</color>
+
+    <color name="footerBackground">#000000</color>
+    <color name="footer_text">#bababa</color>
+    <color name="copyright">#3a3a3a</color>
+    <color name="successRes">#46b84f</color>
+    <color name="success_text">#2da537</color>
+    <color name="success_bg">#def3e0</color>
+    <color name="noResultMsg">#c5c2c2</color>
+    <color name="success_br_border">#cbeacd</color>
+
+    <color name="yellow_light">#fcf3cf</color><!--f9379f-->
+    <color name="primaryBtn">#fed669</color>
+    <color name="primaryBtnPressed">#ffa500</color>
+    <color name="primaryBtnDark">#fbbb05</color>
+    <color name="buttonGradStart">#fed669</color>
+    <color name="buttonGradEnd">#e4bb4c</color>
+
+    <color name="nav_header_grad_start">#fbd365</color>
+    <color name="nav_header_grad_end">#fbbb05</color>
+    <color name="link">#428bca</color>
+    <color name="sf_create_ac_msg">#b7b3b9</color>
+
+    <color name="buttonText">#2b333d</color>
+
+    <color name="err_txt">#a94442</color>
+    <color name="err_bg">#f2dede</color>
+    <color name="err_bg_border">#ebccd1</color>
+
+    <color name="fav">#f88</color>
+
+    <!--Wizard-->
+    <color name="step_pager_previous_tab_color">#fcf3cf</color>
+    <color name="step_pager_selected_tab_color">#fed669</color>
+    <color name="step_pager_selected_last_tab_color">#ffa500</color>
+    <color name="step_pager_next_tab_color">#10000000</color>
+
+    <color name="review_green">#ff669900</color>
+    <color name="text_light">#66000000</color>
+
+    <color name="theme_bg">#3c3c44</color> <!--232f3e-->
+    <color name="counter_text_bg">#fff</color>
+    <color name="lightestGrey">#d9d9d9</color>
+
+</resources>

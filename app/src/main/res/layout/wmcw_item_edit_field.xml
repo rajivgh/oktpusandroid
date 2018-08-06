@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_wmcw_item_editfield_label"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginBottom="2dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_edit_box"
+        android:padding="@dimen/wmcw_field_padding"
+        android:textSize="16sp"
+        android:textColor="@color/buttonText"
+        android:singleLine="true"
+        android:id="@+id/et_wmcw_item_editfield_value"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_hide"
+        android:title="@string/item_hide"/>
+    <item android:id="@+id/item_compare"
+        android:title="@string/item_add_to_compare_list"/>
+    <item android:id="@+id/item_car_parts"
+        android:title="@string/item_see_car_parts"
+        android:visible="false"/>
+    <item android:id="@+id/item_car_review"
+        android:title="@string/item_car_review"
+        android:visible="false" />
+    <item android:id="@+id/item_car_recall"
+        android:title="@string/item_car_recall"
+        android:visible="false" />
+</menu>

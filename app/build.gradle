@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'oktpuskey'
+            keyPassword '123456'
+            storeFile file('/home/androidspace/Documents/oktpus/keystore/oktpus_keystore.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.app.oktpus"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 28
+        versionName "4.3.0"
+    }
+    buildTypes {
+        task switchToDebug(type: Copy){
+            description = 'switches to DEBUG google-services.json'
+            from "src/debug"
+            include "google-services.json"
+            into "."
+        }
+
+        task switchToRelease(type: Copy) {
+            description = 'Switches to RELEASE google-services.json'
+            from "src/release"
+            include "google-services.json"
+            into "."
+        }
+
+        release {
+            minifyEnabled false
+            debuggable false
+            switchToRelease
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            switchToDebug
+            debuggable true
+        }
+    }
+    /*afterEvaluate {
+        processDebugGoogleServices.dependsOn switchToDebug
+        processReleaseGoogleServices.dependsOn switchToRelease
+    }*/
+
+    useLibrary 'org.apache.http.legacy'
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/ASL2.0'
+    }
+
+    lintOptions {
+        checkReleaseBuilds true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    /*compile 'com.squareup.okhttp3:okhttp:3.9.0'*/
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.kyleduo.switchbutton:library:1.4.4'
+    compile 'io.apptik.widget:multislider:1.2'
+    compile 'com.android.support:cardview-v7:23.3.+'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:okhttp-integration:1.5.0@aar'
+    compile 'com.google.code.gson:gson:1.7.2'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.google.android.gms:play-services-location:10.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.1'
+    compile 'com.google.android.gms:play-services-auth:10.0.1'
+    compile 'com.google.android.gms:play-services-analytics:10.0.1'
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+    compile 'com.github.travijuu:numberpicker:1.0.7'
+    compile('com.paypal.sdk:paypal-android-sdk:2.15.3') {
+        exclude group: 'io.card'
+    }
+
+    /*compile 'com.squareup.leakcanary:leakcanary-android:1.5.4'*/
+    /*releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'*/
+
+    /*compile 'com.facebook.stetho:stetho:1.5.0'
+    compile 'com.facebook.stetho:stetho-okhttp:1.5.0'*/
+}
+apply plugin: 'com.google.gms.google-services'

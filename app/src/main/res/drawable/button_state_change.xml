@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@color/primaryBtnPressed">
+    </item> <!-- pressed -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/buttonGradStart"
+                android:endColor="@color/buttonGradEnd"
+                android:angle="270"
+                android:type="linear"/>
+        </shape>
+    </item> <!-- default -->
+</selector>

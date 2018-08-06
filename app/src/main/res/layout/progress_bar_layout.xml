@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/loading_bar"
+    android:layout_gravity="bottom"
+    android:layout_height="50dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:id="@+id/okt_spinner"
+            android:background="@drawable/spinner"
+            android:layout_width="100dp"
+            android:scaleType="center"/>
+        <!--<ProgressBar
+            android:layout_width="match_parent"
+
+            android:id="@+id/progress_bar"
+            />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/okt_loading_txt"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/okt_spinner"
+            android:text="Loading more results..."/>
+    </RelativeLayout>
+
+</RelativeLayout>

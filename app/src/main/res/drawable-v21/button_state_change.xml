@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/primaryBtnPressed"
+                android:endColor="@color/primaryBtnPressed"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item> <!-- pressed -->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/buttonGradStart"
+                android:endColor="@color/buttonGradEnd"
+                android:angle="270"
+                android:type="linear"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item> <!-- default -->
+</selector>

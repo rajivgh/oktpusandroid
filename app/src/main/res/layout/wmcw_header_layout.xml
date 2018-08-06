@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wmcw_subtitle"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:typeface="sans"/>
+
+    <!--<View
+        android:layout_width="160dp"
+        android:layout_height="1dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/wmcw_sub_sub_title">
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_green_tick"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/footer_text"
+            android:text="@string/wmcw_sub_sub_title" />-->
+    </LinearLayout>
+
+
+    <!--android:text="Evaluate your car now with 3 simple steps: \n 1) Fill the form \n 2) Pay $2.99 \n 3) Get price!" />-->
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:background="#282828"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/success_box_bg"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layout_wmcw_thank_you">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:padding="10dp"
+            android:textColor="@color/success_text"
+            android:text="@string/wmcw_success_thank_you"/>
+    </LinearLayout>
+</LinearLayout>

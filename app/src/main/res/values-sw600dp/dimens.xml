@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isTablet">true</bool>
+    <dimen name="nav_drawer_width">270dp</dimen>
+    <dimen name="mic_padding">8dp</dimen>
+    <dimen name="sort_dialog_width">300dp</dimen>
+</resources>

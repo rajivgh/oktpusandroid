@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:visibility="gone"
+    android:id="@+id/layout_nw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_conn_fail"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Error"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_med"
+            android:textAlignment="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please check your Internet Connection and try again"
+            android:textColor="@color/footer_text"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_med"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/listGroupDivider"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Try Again"
+            android:onClick="actionTryAgain"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+</RelativeLayout>

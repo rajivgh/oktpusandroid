@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dynamic_text_view" type="id"/>
+    <item name="checkbox_item" type="id"/>
+    <item name="multi_choice_row" type="id"/>
+</resources>

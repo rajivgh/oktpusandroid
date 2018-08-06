@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/layout_page_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/insurance_getting_started_title"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center_horizontal|bottom"
+            android:textAlignment="center"
+            android:id="@+id/tv_header" />
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_header"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select country"
+                android:textSize="18sp"
+                android:paddingBottom="5dp"
+                android:id="@+id/tv_select_country" />
+            <RelativeLayout
+                android:id="@+id/rl_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_edit_box"
+                android:layout_below="@+id/tv_select_country">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_select_country"
+                    style="@android:style/Widget.Holo.Light.TextView"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_below="@id/rl_spinner">
+                <EditText
+                    android:id="@+id/et_ci_zipcode"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter zip code"
+                    android:textSize="16sp"
+                    android:inputType="textCapCharacters"
+                    android:background="@drawable/option_button_unselected"
+                    android:padding="10dp"
+                    android:gravity="left" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="@color/white"
+        android:layout_marginBottom="48dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <include layout="@layout/layout_button"
+            android:id="@+id/btn_ci_start_page"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+
+<!--
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/layout_page_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finance_getting_started_title"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center_horizontal|bottom"
+            android:textAlignment="center"
+            android:id="@+id/tv_header" />
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_header"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select country"
+                android:textSize="18sp"
+                android:paddingBottom="5dp"
+                android:id="@+id/tv_select_country" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_edit_box"
+                android:layout_below="@+id/tv_select_country">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_select_country"
+                    style="@android:style/Widget.Holo.Light.TextView"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="@color/white"
+        android:layout_marginBottom="48dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <include layout="@layout/layout_button"
+            android:id="@+id/btn_ci_start_page"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+&lt;!&ndash;asd&ndash;&gt;
+    <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white">
+<include layout="@layout/layout_page_title"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="150dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We'll find the best car insurance quote for you."
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center_horizontal|bottom"
+            android:textAlignment="center"/>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:background="@drawable/selector_edit_box"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_select_country"
+                style="@android:style/Widget.Holo.Light.TextView"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="48dp"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/et_ci_zipcode"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Zip Code"
+                android:textSize="18sp"
+                android:inputType="textCapCharacters"
+                android:background="@drawable/option_button_unselected"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"/>
+
+            <include layout="@layout/layout_button"
+                android:id="@+id/btn_ci_start_page"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>-->

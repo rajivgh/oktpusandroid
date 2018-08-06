@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="2dp"
+        android:textAllCaps="true"
+        android:id="@+id/tv_wmcw_item_editfield_label"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_edit_box"
+            android:padding="@dimen/wmcw_field_padding"
+            android:textColor="@color/buttonText"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:id="@+id/et_wmcw_item_editfield_value"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/selector_edit_box"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spinner_wmcw_kms"
+                android:layout_width="wrap_content"
+                style="@android:style/Widget.Holo.Light.TextView"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

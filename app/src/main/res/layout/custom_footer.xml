@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:layout_alignParentEnd="true"
+    android:background="@color/footerBackground"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="80dp">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/footer_text"
+        android:text="DISPLAY FOOTER HERE"
+        android:visibility="gone"
+        android:gravity="center_horizontal"/>-->
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right|center"
+        android:layout_gravity="right">
+
+        <TextView
+            android:text="ABOUT"
+            android:id="@+id/txt_footer_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/footer_text"
+            android:autoLink="web"
+            android:clickable="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="•"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="CONTACT"
+            android:id="@+id/txt_footer_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/footer_text"
+            android:autoLink="web"
+            android:clickable="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="•"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="PRIVACY"
+            android:id="@+id/txt_footer_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/footer_text"
+            android:autoLink="web"
+            android:clickable="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="•"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="TERMS"
+            android:id="@+id/txt_footer_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/footer_text"
+            android:autoLink="web"
+            android:clickable="true"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/footer_layout"
+        android:gravity="right"
+        android:layout_gravity="right">
+    <TextView
+        android:text="Copyright © 2016 Oktpus international inc. All rights reserved"
+        android:id="@+id/copyrightdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/copyright"
+        android:autoLink="web"
+        android:clickable="true"
+        android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
+

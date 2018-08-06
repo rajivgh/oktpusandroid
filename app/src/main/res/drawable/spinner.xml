@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/selected"
+android:oneshot="false">
+<item android:drawable="@drawable/oktpus_layer_1" android:duration="80" />
+<item android:drawable="@drawable/oktpus_layer_2" android:duration="80" />
+<item android:drawable="@drawable/oktpus_layer_3" android:duration="80" />
+<item android:drawable="@drawable/oktpus_layer_4" android:duration="80" />
+<item android:drawable="@drawable/oktpus_layer_5" android:duration="80" />
+<item android:drawable="@drawable/oktpus_layer_6" android:duration="80" />
+</animation-list>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<animation-list-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/selected"-->
+<!--android:oneshot="false">-->
+<!--<item android:drawable="@drawable/loadingimage_1" android:duration="50" />-->
+<!--<item android:drawable="@drawable/loadingimage_2" android:duration="50" />-->
+<!--<item android:drawable="@drawable/loadingimage_3" android:duration="50" />-->
+<!--<item android:drawable="@drawable/loadingimage_4" android:duration="50" />-->
+<!--<item android:drawable="@drawable/loadingimage_5" android:duration="50" />-->
+<!--<item android:drawable="@drawable/loadingimage_6" android:duration="50" />-->
+<!--</animation-list>-->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<animation-list-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/selected"-->
+<!--android:oneshot="false">-->
+<!--<item android:drawable="@drawable/oktpus_layer_1" android:duration="50" />-->
+<!--<item android:drawable="@drawable/oktpus_layer_2" android:duration="50" />-->
+<!--<item android:drawable="@drawable/oktpus_layer_3" android:duration="50" />-->
+<!--<item android:drawable="@drawable/oktpus_layer_4" android:duration="50" />-->
+<!--<item android:drawable="@drawable/oktpus_layer_5" android:duration="50" />-->
+<!--<item android:drawable="@drawable/oktpus_layer_6" android:duration="50" />-->
+<!--</animation-list>-->
